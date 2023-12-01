@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8E Exercise Objects</title>
+  </head>
+  <body>
+    <script>
+      const product1 = {
+        name: "toblerone",
+        price: 54,
+      };
+
+      const product2 = {
+        name: "toblerone",
+        price: 50,
+      };
+
+      function isSameProduct(product1, product2) {
+        if (
+          (product1.name === product2.name) &
+          (product1.price === product2.price)
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      console.log(isSameProduct(product1, product2));
+    </script>
+  </body>
+</html>

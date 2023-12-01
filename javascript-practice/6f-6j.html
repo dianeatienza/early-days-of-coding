@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COIN-FLIP GAME (6F to 6J Exercises)</title>
+    </head>
+    <body>
+        <script>
+            randomNumber = Math.random();
+            // dito wala ako ni-introduce na wariable na result, yet it worked! 
+
+            if (randomNumber < 0.5) {
+                result = 'heads';
+                console.log(result);     // <-- yan ang difference. I included that line, kaya nalabas sa console. Sa teacher wala yan.
+            } else {
+                result = 'tails';
+                console.log(result);    // <-- yan ang difference. I included that line, kaya nalabas sa console. Sa teacher wala yan.
+            }
+            
+            const guess = 'tails';
+
+            if (guess === 'heads') {
+                console.log('You win!');
+            } else {
+                console.log('You lose!');
+            }
+
+        </script>
+    </body>
+</html>

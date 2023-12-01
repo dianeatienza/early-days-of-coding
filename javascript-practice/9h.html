@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9H DOM Challenge Exercise</title>
+  </head>
+  <body>
+    <input placeholder="Type something" onkeyup="typeSomething(event)" />
+    <p class="js-input-value"></p>
+    <script>
+      function typeSomething(event) {
+        document.querySelector(".js-input-value").innerHTML =
+          event.target.value;
+      }
+    </script>
+  </body>
+</html>

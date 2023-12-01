@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+    background-color: black;
+}
+button {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+    height: 70px;
+    width: 70px;
+    font-size: 26px;
+    border: none;
+    margin: 5px;
+}
+
+.operation {
+    background-color: rgb(254, 160, 10);
+}
+
+.calculation {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9D DOM</title>
+  </head>
+  <body>
+    <input
+      placeholder="Name"
+      class="js-insert-name"
+      onkeydown="inputNameKeyDown(event)"
+    />
+    <button
+      onclick="
+    getName();
+    displayName();
+    "
+    >
+      Submit
+    </button>
+    <p class="js-received-name"></p>
+    <script>
+      function getName() {
+        name = document.querySelector(".js-insert-name").value;
+      }
+
+      let name = "";
+      function displayName() {
+        document.querySelector(
+          ".js-received-name"
+        ).innerHTML = `Your name is: ${name}`;
+      }
+
+      function inputNameKeyDown(event) {
+        //console.log(event.key);
+        if (event.key === "Enter") {
+          getName();
+          displayName();
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9C DOM</title>
+  </head>
+  <body>
+    <button
+      onclick="
+        displayText('heads');
+    "
+    >
+      heads
+    </button>
+
+    <button
+      onclick="
+        displayText('tails');
+    "
+    >
+      tails
+    </button>
+
+    <p class="js-face-result"></p>
+
+    <script>
+      function displayText(face) {
+        document.querySelector(
+          ".js-face-result"
+        ).innerHTML = `You chose: ${face}`;
+      }
+    </script>
+  </body>
+</html>
