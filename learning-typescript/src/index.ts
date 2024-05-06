@@ -137,3 +137,9 @@ console.log(customer?.birthday?.getFullYear());
 //Optional element access operator
 // if (customers !== null && customers !== undefined)
 //customers?.[0]
+
+//Optional call operator
+// let log: any = (message: string) => console.log(message)
+let log: any = null;
+// log('a');
+log?.('a');
